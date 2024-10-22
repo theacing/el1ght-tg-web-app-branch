@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    overflow: hidden;
+    background: radial-gradient(169.40% 89.55% at 94.76% 6.29%,rgba(255,255,255) 0%, rgb(169, 169, 169) 100%);
+}
+
+html,
+body,
+:root{
+    height: 100%;
+    color-scheme: light;
+}
+
+/*.button-default{*/
+/*    width: 3.5rem;*/
+/*    height: 3.5rem;*/
+/*    border-radius: 50%;*/
+/*    background-color: #FFF8F2;*/
+/*    opacity: 40%;*/
+/*    transition: .2s ease-in-out all;*/
+/*    box-shadow: 1px 1px 3px #626262;*/
+/*}*/
+/*.button-default:hover{*/
+/*    background-color: #fff;*/
+/*    opacity: 100%;*/
+/*}*/
+/*.button-default.active{*/
+/*    background-color: #fff;*/
+/*    opacity: 100%;*/
+/*}*/
+
+/*.main{*/
+/*    !*border-radius: 50px;*!*/
+/*}*/
+
+.top-left {
+    --r: 15px; /* the radius */
+    --s: 25px; /* the size of the cut */
+
+    --_m:/calc(2*var(--r)) calc(2*var(--r))
+    radial-gradient(#000 70%,#0000 72%) no-repeat;
+    mask:
+            right 0 bottom calc(var(--s) + var(--r)) var(--_m),
+            right calc(var(--s) + var(--r)) bottom 0 var(--_m),
+            radial-gradient(var(--s) at 100% 100%,#0000 99%,#000 101%)
+            calc(-1*var(--r)) calc(-1*var(--r)) no-repeat,
+            conic-gradient(from 90deg at calc(100% - var(--s) - 2*var(--r)) calc(100% - var(--s) - 2*var(--r)),
+            #0000 25%,#000 0);
+}
+
+.bred-1 .top-left{
+    background-image: url('../public/images/favBg-3.jpg');
+}
+
+.bred-2 .top-left{
+    background-image: url('../public/images/favBg-4.jpg');
+}
+
+.bred-3 .top-left{
+    background-image: url('../public/images/favBg-1.jpg');
+}
+
+.bred-4 .top-left{
+    background-image: url('../public/images/favBg-5.jpg');
+}
+
+.bred-4{
+    background-image: url('../public/images/favBg-5.jpg');
+}
+
+.bred:after{
+    content: url('../public/images/play-alt.svg');
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+}
