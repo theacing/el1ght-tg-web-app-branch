@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Footer = () => {
+const Footer = async () => {
      return (
         <div className={'min-h-[290px] relative bg-neutral-800 mt-10 px-12'}>
         <p className={'font-medium text-neutral-400 pt-14 text-lg'}>Sorry, but...</p>

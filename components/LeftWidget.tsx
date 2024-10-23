@@ -3,8 +3,8 @@
 import {useRouter} from "next/navigation";
 import {forwardRef} from "react";
 import {twMerge} from "tailwind-merge";
-import { FaPlay } from "react-icons/fa";
 import Link from "next/link";
+import React from "react";
 
 interface ListItemProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
     name: string;
@@ -16,11 +16,6 @@ const LeftWidget = forwardRef<HTMLButtonElement, ListItemProps>(({
     name,
     href,
 }, ref) => {
-    const router = useRouter();
-
-    // const onClick = () => {
-    //     router.push(href);
-    // }
 
     return (
         <Link href={href} className={twMerge(`relative h-full w-full overflow-hidden rounded-3xl `,className)}> 

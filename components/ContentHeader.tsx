@@ -2,7 +2,7 @@ interface ContentHeaderProps {
     children: React.ReactNode;
 }
 
-const ContentHeader: React.FC<ContentHeaderProps> = ({
+const ContentHeader: React.FC<ContentHeaderProps> = async ({
     children
 }) => {
     // const router = useRouter();

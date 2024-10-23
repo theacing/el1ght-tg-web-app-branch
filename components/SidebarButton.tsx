@@ -8,7 +8,7 @@ interface SidebarItemProps {
     href: string;
 }
 
-const SidebarButton: React.FC<SidebarItemProps> = ({
+const SidebarButton: React.FC<SidebarItemProps> = async ({
     icon: Icon,
     active,
     href
