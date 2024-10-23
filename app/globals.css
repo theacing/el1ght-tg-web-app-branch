@@ -36,22 +36,7 @@ body,
 /*    !*border-radius: 50px;*!*/
 /*}*/
 
-.top-left {
-    --r: 15px; /* the radius */
-    --s: 25px; /* the size of the cut */
-
-    --_m:/calc(2*var(--r)) calc(2*var(--r))
-    radial-gradient(#000 70%,#0000 72%) no-repeat;
-    mask:
-            right 0 bottom calc(var(--s) + var(--r)) var(--_m),
-            right calc(var(--s) + var(--r)) bottom 0 var(--_m),
-            radial-gradient(var(--s) at 100% 100%,#0000 99%,#000 101%)
-            calc(-1*var(--r)) calc(-1*var(--r)) no-repeat,
-            conic-gradient(from 90deg at calc(100% - var(--s) - 2*var(--r)) calc(100% - var(--s) - 2*var(--r)),
-            #0000 25%,#000 0);
-}
-
-/* .bred-1 .top-left{
+.bred-1 .top-left{
     background-image: url('../public/images/favBg-3.jpg');
 }
 
@@ -69,9 +54,9 @@ body,
 
 .bred-4{
     background-image: url('../public/images/favBg-5.jpg');
-} */
+}
 
-.bred:after{
+/* .bred:after{
     content: url('../public/images/play-alt.svg');
     width: 30px;
     height: 30px;
@@ -79,4 +64,4 @@ body,
     bottom: 0;
     right: 0;
     z-index: 100;
-}
+} */
