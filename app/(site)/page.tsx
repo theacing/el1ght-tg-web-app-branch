@@ -83,11 +83,11 @@ export default function Home() {
                          </div>
 
                          <div className="grid grid-rows-8 grid-cols-5 md:grid-rows-10 md:grid-cols-10 gap-2 h-full">
-                          <div className="bg-[#424242] row-span-2 col-span-5 md:row-span-2 md:col-span-full rounded-3xl overflow-hidden"></div>
-                          <div className={'row-span-2 col-span-3 md:row-span-2 md:col-span-full bred bred-1'}></div>
-                          <div className={'row-span-6 col-span-2 md:row-span-2 md:col-span-full bred-4'}></div>
-                          <div className={'row-span-2 col-span-3 md:row-span-2 md:col-span-full bred bred-2'}></div>
-                          <div className={'row-span-2 col-span-3 md:row-span-2 md:col-span-full bred bred-3'}></div>
+                          <div className="bg-[#424242] row-span-2 col-span-5 md:row-span-2 md:col-span-full rounded-3xl overflow-hidden "></div>
+                          <div className={'bg-[#424242] row-span-2 col-span-3 md:row-span-2 md:col-span-full bred bred-1 rounded-3xl overflow-hidden'}></div>
+                          <div className={'bg-[#424242] row-span-6 col-span-2 md:row-span-2 md:col-span-full bred-4 rounded-3xl overflow-hidden'}></div>
+                          <div className={'bg-[#424242] row-span-2 col-span-3 md:row-span-2 md:col-span-full bred bred-2 rounded-3xl overflow-hidden '}></div>
+                          <div className={'bg-[#424242] row-span-2 col-span-3 md:row-span-2 md:col-span-full bred bred-3 rounded-3xl overflow-hidden'}></div>
                            {/* <LikedWidget href={'liked'} name={'Liked Songs'} className="bg-[#424242] row-span-2 col-span-5 md:row-span-2 md:col-span-full rounded-3xl overflow-hidden" />
 
                            <LeftWidget href={'top-charts'} name={'Top Charts'} className={'row-span-2 col-span-3 md:row-span-2 md:col-span-full bred bred-1'} />
