@@ -101,7 +101,7 @@ export default function Home() {
                   )
             }
         </ContentHeader>
-        <Footer />
+        {/* <Footer /> */}
       </div>
   );
 }
