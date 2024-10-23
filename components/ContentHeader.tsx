@@ -1,8 +1,3 @@
-'use client'
-
-// import {useRouter} from "next/navigation";
-// import {RxCaretLeft} from "react-icons/rx";
-
 interface ContentHeaderProps {
     children: React.ReactNode;
 }
@@ -19,10 +14,7 @@ const ContentHeader: React.FC<ContentHeaderProps> = ({
             {/*        <RxCaretLeft className={"text-black"} size={35} />*/}
             {/*    </button>*/}
             {/*</div>*/}
-
                 {children}
-
-
         </div>
     );
 };

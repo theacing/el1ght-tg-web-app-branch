@@ -1,7 +1,6 @@
 import "./globals.css";
 import Script from "next/script";
 import {Inter} from "next/font/google";
-// import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 
@@ -22,12 +21,10 @@ export default function RootLayout({
       <body
         className={inter.className}
       >
-
           <Header>
               {children}
           </Header>
           <Sidebar />
-
       </body>
     </html>
   );
