@@ -73,14 +73,22 @@ export default function Home() {
                   (
 
                        <div className="h-full">
-                         <div className="mb-2">
+                         <div className="mb-4">
                            <h1 className="text-black text-xl font-semibold">
                              Welcome Home, {userData.first_name}
                            </h1>
+                           <h2 className="text-black text-lg">
+                             See what we have for you
+                           </h2>
                          </div>
 
                          <div className="grid grid-rows-8 grid-cols-5 md:grid-rows-10 md:grid-cols-10 gap-2 h-full">
-                           <LikedWidget href={'liked'} name={'Liked Songs'} className="bg-[#424242] row-span-2 col-span-5 md:row-span-2 md:col-span-full rounded-3xl overflow-hidden" />
+                          <div className="bg-[#424242] row-span-2 col-span-5 md:row-span-2 md:col-span-full rounded-3xl overflow-hidden"></div>
+                          <div className={'row-span-2 col-span-3 md:row-span-2 md:col-span-full bred bred-1'}></div>
+                          <div className={'row-span-6 col-span-2 md:row-span-2 md:col-span-full bred-4'}></div>
+                          <div className={'row-span-2 col-span-3 md:row-span-2 md:col-span-full bred bred-2'}></div>
+                          <div className={'row-span-2 col-span-3 md:row-span-2 md:col-span-full bred bred-3'}></div>
+                           {/* <LikedWidget href={'liked'} name={'Liked Songs'} className="bg-[#424242] row-span-2 col-span-5 md:row-span-2 md:col-span-full rounded-3xl overflow-hidden" />
 
                            <LeftWidget href={'top-charts'} name={'Top Charts'} className={'row-span-2 col-span-3 md:row-span-2 md:col-span-full bred bred-1'} />
 
@@ -88,7 +96,7 @@ export default function Home() {
 
                            <LeftWidget href={'world-top'} name={'World Top'} className={'row-span-2 col-span-3 md:row-span-2 md:col-span-full bred bred-2'} />
 
-                           <LeftWidget href={'week-hot'} name={'Week Hot'} className={'row-span-2 col-span-3 md:row-span-2 md:col-span-full bred bred-3'} />
+                           <LeftWidget href={'week-hot'} name={'Week Hot'} className={'row-span-2 col-span-3 md:row-span-2 md:col-span-full bred bred-3'} /> */}
 
                          </div>
                        </div>
@@ -101,7 +109,7 @@ export default function Home() {
                   )
             }
         </ContentHeader>
-        {/* <Footer /> */}
+        <Footer />
       </div>
   );
 }
