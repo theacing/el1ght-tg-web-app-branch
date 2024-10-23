@@ -16,12 +16,6 @@ const ListItem = forwardRef<HTMLButtonElement, ListItemProps>(({
     name,
     href,
 }, ref) => {
-    const router = useRouter();
-
-    // const onClick = () => {
-    //     router.push(href);
-    // }
-
     return (
         <Link href={href} className={twMerge(`relative h-full w-full rounded-3xl bg-cover bg-center hover:saturate-150 transition`, className)}>
             <div className={"relative group flex bg-black/[.3] rounded-3xl items-center h-full w-full overflow-hidden flex flex-col items-center justify-center"}>

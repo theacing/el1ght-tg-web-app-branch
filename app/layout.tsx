@@ -14,16 +14,17 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <head>
-          <title>Charton dev build</title>
-        <Script src="https://telegram.org/js/telegram-web-app.js" strategy="beforeInteractive" />
+        <title>Charton dev build</title>
       </head>
-      <body
-        className={inter.className}
-      >
-          <Header>
-              {children}
-          </Header>
-          <Sidebar />
+      <body className={inter.className}>
+        <div className="h-screen flex flex-col">
+          <Header/>
+          <main className="h-full rounded-[45px] overflow-y-auto shadow-inner bg-[#ededed]">
+            {children}
+          </main>
+          <Sidebar/>
+        </div>
+        <Script src="https://cdn.jsdelivr.net/npm/tailwindcss-jit-cdn" strategy="beforeInteractive"></Script>
       </body>
     </html>
   );

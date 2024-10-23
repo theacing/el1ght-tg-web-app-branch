@@ -1,7 +1,5 @@
 import {notFound} from "next/navigation";
 
-const Page = async () => {
+export default function Page () {
     notFound()
 };
-
-export default Page;
