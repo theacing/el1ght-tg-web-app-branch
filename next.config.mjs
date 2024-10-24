@@ -4,6 +4,7 @@ const nextConfig = {
         ignoreDuringBuilds: true,
     },
     reactStrictMode: true,
+    profiler: true,
 };
 
 export default nextConfig;

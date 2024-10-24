@@ -1,8 +1,8 @@
 import "./globals.css";
-import Script from "next/script";
 import {Inter} from "next/font/google";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
+import {twMerge} from "tailwind-merge";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,15 +16,12 @@ export default async function RootLayout({
       <head>
         <title>Charton dev build</title>
       </head>
-      <body className={inter.className}>
-        <div className="h-screen flex flex-col">
-          <Header/>
-          <main className="h-full rounded-[45px] overflow-y-auto shadow-inner bg-[#ededed]">
+      <body className={twMerge(inter.className, "h-full")}>
+        <div className={"h-full flex flex-col gap-1 p-1"}>
+            <Header/>
             {children}
-          </main>
-          <Sidebar/>
         </div>
-        <Script src="https://cdn.jsdelivr.net/npm/tailwindcss-jit-cdn" strategy="beforeInteractive"></Script>
+        <Sidebar/>
       </body>
     </html>
   );
